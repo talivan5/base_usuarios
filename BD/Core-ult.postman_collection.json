@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "f1f1d3ec-51a2-4b24-b576-554705acb216",
+		"name": "Core-ult",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin externo",
+			"item": [
+				{
+					"name": "Persona",
+					"item": [
+						{
+							"name": "crear Persona",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA1OTA4MjMsImV4cCI6MTY2MDYxOTYyM30.z1ZldttXY3qszkcjWPCdVqQ2VHYmVjZjxL769bYutbs",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"per_nombres\":\"Juan Prueba\",\n        \"per_primer_apellido\":\"cancilleria\",\n        \"per_segundo_apellido\":\"cancilleria\",\n        \"per_otro_apellido\":\"\",\n        \"per_fecha_nacimiento\":\"1988-07-06\",\n        \"per_email\":\"canci@gmail.com\",\n        \"per_direccion\":\"avenida 5 N 777-A\",\n        \"per_numero_documento\":\"12449834\",\n        \"par_genero\":\"M\",\n        \"par_tipo_documento\":\"CI\",\n        \"par_nacionalidad\":\"Bolivia\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/persona-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"persona-ext"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "obtener personas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA4Mzc2NDAsImV4cCI6MTY2MDg2NjQ0MH0.O6y0l4zJ4lNtbAP6nvaNqsHNWNQNFa7jwUpIwHQNHaA",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/persona-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"persona-ext"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizar persona",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA4Mzc2NDAsImV4cCI6MTY2MDg2NjQ0MH0.O6y0l4zJ4lNtbAP6nvaNqsHNWNQNFa7jwUpIwHQNHaA",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id_persona\":0,\n    \"per_nombres\":\"Juan Prueba\",\n        \"per_primer_apellido\":\"cancilleria\",\n        \"per_segundo_apellido\":\"cancilleria\",\n        \"per_otro_apellido\":\"\",\n        \"per_fecha_nacimiento\":\"1988-07-06\",\n        \"per_email\":\"canci@gmail.com\",\n        \"per_direccion\":\"avenida 5 N 777-A\",\n        \"per_numero_documento\":\"12449834\",\n        \"par_genero\":\"M\",\n        \"par_tipo_documento\":\"CI\",\n        \"par_nacionalidad\":\"Bolivia\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/persona-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"persona-ext"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ususario",
+					"item": [
+						{
+							"name": "crear usuario",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA1OTMwMDAsImV4cCI6MTY2MDYyMTgwMH0.c23Ypd2SbxuYvWkCf7W66f25eB_AnJdVTR6Y9y4mdbw",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"usr_usuario\":\"CANPRU\",\n        \"usr_password\":\"12345\",\n        \"id_persona\":654\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/usuario-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"usuario-ext"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "obtener usuarios",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA4Mzc2NDAsImV4cCI6MTY2MDg2NjQ0MH0.O6y0l4zJ4lNtbAP6nvaNqsHNWNQNFa7jwUpIwHQNHaA",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/usuario-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"usuario-ext"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizar usuario",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjUzIiwidXN1YXJpbyI6IkNBTkNJIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTciLCJpYXQiOjE2NjA4Mzc2NDAsImV4cCI6MTY2MDg2NjQ0MH0.O6y0l4zJ4lNtbAP6nvaNqsHNWNQNFa7jwUpIwHQNHaA",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id_usuario\":658,\n        \"usr_usuario\":\"CANCONSUL\",\n        \"usr_password\":\"12345\",\n        \"id_persona\":654\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/wsconvenio/api/usuario-ext",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"wsconvenio",
+										"api",
+										"usuario-ext"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "persona",
+					"item": [
+						{
+							"name": "crear Persona",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjQzIiwidXN1YXJpbyI6IkVTT1NBIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTgiLCJpYXQiOjE2NjA1NzM1NzIsImV4cCI6MTY2MDYwMjM3Mn0.Amt_odPVw47RwSlu3cIFI9HBpBPDCN5SiY_Lpk82kWE",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"per_nombres\":\"PRUEBA CANCI\",\n        \"per_primer_apellido\":\"cancilleria\",\n        \"per_segundo_apellido\":\"cancilleria\",\n        \"per_otro_apellido\":\"\",\n        \"per_fecha_nacimiento\":\"1988-07-06\",\n        \"per_email\":\"cancilleria@gmail.com\",\n        \"per_direccion\":\"avenida 5 N 777-A\",\n        \"per_numero_documento\":\"369852147\",\n        \"par_genero\":\"M\",\n        \"par_tipo_documento\":\"CI\",\n        \"par_nacionalidad\":\"Bolivia\",\n        \"par_id_entidad\":2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/api/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"api",
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id_persona\":0,\n        \"per_nombres\":\"PRUEBA CANCI\",\n        \"per_primer_apellido\":\"cancilleria\",\n        \"per_segundo_apellido\":\"cancilleria\",\n        \"per_otro_apellido\":\"\",\n        \"per_fecha_nacimiento\":\"1988-07-06\",\n        \"per_email\":\"cancilleria@gmail.com\",\n        \"per_direccion\":\"avenida 5 N 777-A\",\n        \"per_numero_documento\":\"369852147\",\n        \"per_genero\":\"M\",\n        \"per_tipo_documento\":\"CI\",\n        \"per_nacionalidad\":\"Bolivia\",\n        \"per_id_entidad\":2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/api/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"api",
+										"persona"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "usuario",
+					"item": [
+						{
+							"name": "crear usuario",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjQzIiwidXN1YXJpbyI6IkVTT1NBIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTgiLCJpYXQiOjE2NjA1NzM1NzIsImV4cCI6MTY2MDYwMjM3Mn0.Amt_odPVw47RwSlu3cIFI9HBpBPDCN5SiY_Lpk82kWE",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"usr_usuario\":\"CANCI\",\n        \"usr_password\":\"12345\",\n        \"id_persona\":653,\n        \"id_oficina\":0,\n        \"id_entidad\":2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/api/usuario",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"api",
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rol",
+					"item": [
+						{
+							"name": "asignar rol",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjQzIiwidXN1YXJpbyI6IkVTT1NBIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTgiLCJpYXQiOjE2NjA1OTA0MTUsImV4cCI6MTY2MDYxOTIxNX0.p3ibRyIVcCQNPmYnzcU07tU9anWoYCSIyJdhQhFIoNc",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id_rol\":1,\n    \"id_usuario\":653,\n    \"id_sistema\":17\n    \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8500/api/roles",
+									"host": [
+										"localhost"
+									],
+									"port": "8500",
+									"path": [
+										"api",
+										"roles"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "sistema",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cod_sistema\":\"\",\n    \"nombre\":\"\",\n    \"cliente\":\"\",\n    \"descripcion\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8500/api/sistema",
+							"host": [
+								"localhost"
+							],
+							"port": "8500",
+							"path": [
+								"api",
+								"sistema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjQzIiwidXN1YXJpbyI6IkVTT1NBIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTgiLCJpYXQiOjE2NjA4MzI4NjAsImV4cCI6MTY2MDg2MTY2MH0.GlWxyWjLYzOflMQQlVEbXH6YNkF2SE-QZic_gWK35Ig",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_sistema\":0,\n    \"cod_sistema\":\"\",\n    \"nombre\":\"\",\n    \"cliente\":\"\",\n    \"descripcion\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8500/api/sistema",
+							"host": [
+								"localhost"
+							],
+							"port": "8500",
+							"path": [
+								"api",
+								"sistema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoiNjQzIiwidXN1YXJpbyI6IkVTT1NBIiwiaWRfZW50aWRhZCI6IjEiLCJpZF9zaXN0ZW1hIjoiMTgiLCJpYXQiOjE2NjA4MzI4NjAsImV4cCI6MTY2MDg2MTY2MH0.GlWxyWjLYzOflMQQlVEbXH6YNkF2SE-QZic_gWK35Ig",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8500/api/sistema",
+							"host": [
+								"localhost"
+							],
+							"port": "8500",
+							"path": [
+								"api",
+								"sistema"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userclient",
+						"value": "A-$0$1HLMN2/Qw:L1Nux",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usr_usuario\":\"ESOSA\",\n    \"usr_password\":\"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8500/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login ext",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userclient",
+						"value": "M-e/Ru$}3wWeX%$81&uU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usr_usuario\":\"CANCI\",\n    \"usr_password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8500/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
