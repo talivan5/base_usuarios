@@ -112,10 +112,20 @@ const obtenerUsuarioModuloRol = async (req, res) => {
     });
   }
 };
+const encripta = (req, res) => {
+  let usr_password = req.body.usr_password;
+
+  res.status(200).json({
+    codigo: 1,
+    mensaje: "contraseña encriptada:",
+    contenido: bcrypt.hashSync(usr_password, 10),
+  });
+};
 
 module.exports = {
   crearUsuario,
   obtenerCargoUsusarios,
   obtenerCargoUsuario,
-  obtenerUsuarioModuloRol
+  obtenerUsuarioModuloRol,
+  encripta
 };

@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const { check } = require("express-validator");
-const { crearUsuario, obtenerCargoUsusarios, obtenerCargoUsuario, obtenerUsuarioModuloRol } = require("../controllers/usuario.controller");
+const { crearUsuario, obtenerCargoUsusarios, obtenerCargoUsuario, obtenerUsuarioModuloRol, encripta } = require("../controllers/usuario.controller");
 const { usuarioExiste, idPersona, idPersonaExiste, } = require("../helpers/validador-usuario");
 const { validarCampos } = require("../middlewares/validar-campos");
 const { validarJWT } = require("../middlewares/validar-jwt");
@@ -42,5 +42,7 @@ router.get('/usuarioModuloRol/:id_usuario/:id_sistema',
   ], 
   obtenerUsuarioModuloRol
 );
+
+router.get('/encripta',encripta)
 
 module.exports = router;

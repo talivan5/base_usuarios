@@ -29,7 +29,7 @@ const login = async (req, res) => {
       usr_password,
       userDate.rows[0].password
     );
-
+    
     if (!validaContrasenia) {
       return res.status(400).json({
         codigo: 0,
@@ -77,6 +77,8 @@ const login = async (req, res) => {
   }
 };
 
+
+
 module.exports = {
-  login,
+  login
 };
